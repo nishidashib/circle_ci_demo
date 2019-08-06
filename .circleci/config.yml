@@ -6,6 +6,7 @@ jobs:
       - image: circleci/node:10
     steps:
       - checkout   
+      - run: pwd
       - run: npm ci
       - run: npm test
 
